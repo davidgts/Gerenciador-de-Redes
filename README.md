@@ -17,7 +17,7 @@ Projeto Idealizado Por David Machado - 2019
   - Tela de Login
   - Tela de Cadastro
   - Dashboard
-  - Tela de Status da Rede Para o cliente
+  - Tela de Status da Rede Para o Gerente
 ---
 # Funcionalidades
 
