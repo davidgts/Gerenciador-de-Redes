@@ -5,7 +5,7 @@ Uma Gerenciador de ativos de Redes , onde haverá informações sobre serviços 
 Projeto Idealizado Por David Machado - 2019
 
 ---
-##### Será um sistema para promover uma boa gerência das ordens de Serviço utilizando diversas linguagens como:
+##### Será um sistema para promover uma boa gerência dos ativos de Rede utilizando diversas linguagens como:
 
   - HTML
   - CSS
