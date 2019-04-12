@@ -2,29 +2,34 @@
 
 Uma Gerenciador de ativos de Redes , onde haverá informações sobre serviços disponíveis,status de maquinas,gerencia de endereços entre outras informações 
 
-Projeto Idealizado Por David Machado - 2019
+Projeto do Grupo
+
+David Machado (201612380029)
+Laryssa Lorena (20172380011)
+Bruno Alencar(20172380029)
 
 ---
 ##### Será um sistema para promover uma boa gerência dos ativos de Rede utilizando diversas linguagens como:
 
   - HTML
   - CSS
+  - SQL
   - PHP
-  - JAVA
+  - JAVASCRIPT
 ---
 # Ambientes!
 
   - Tela de Login
-  - Tela de Cadastro
   - Dashboard
-  - Tela de Status da Rede Para o Gerente
+<!--  - Tela de Status da Rede Para o Gerente -->
 ---
 # Funcionalidades
 
 Será possivel :
-
-  - Criar,modificar e excluir Ativos
+  - Criar,modificar e excluir Usuários
+  - Criar,modificar e excluir Ativos de Rede
   - Visualizar Gráficos Referente a condições da rede
+  - Configurar Serviços como DHCP,DNS,Entre outros.
   - Notificar o Gerente quando Mudar o status de dispositivos criticos
   
 
