@@ -2,15 +2,18 @@
 
 Uma Gerenciador de ativos de Redes , onde haverá informações sobre serviços disponíveis,status de maquinas,gerencia de endereços entre outras informações 
 
-Projeto Idealizado Por David Machado - 2019
+Projeto do Grupo
+David Machado (201612380029)
+Laryssa Lorena (20172380011)
+Bruno Alencar(20172380029)
 
 ---
 ##### Será um sistema para promover uma boa gerência dos ativos de Rede utilizando diversas linguagens como:
 
   - HTML
   - CSS
-  - PHP
-  - JAVA
+  - SQL
+  - JAVASCRIPT
 ---
 # Ambientes!
 
