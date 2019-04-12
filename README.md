@@ -20,7 +20,7 @@ Bruno Alencar(20172380029)
   - Tela de Login
   - Tela de Cadastro
   - Dashboard
-  - Tela de Status da Rede Para o Gerente
+<!--  - Tela de Status da Rede Para o Gerente -->
 ---
 # Funcionalidades
 
