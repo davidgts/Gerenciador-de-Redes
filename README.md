@@ -14,21 +14,22 @@ Bruno Alencar(20172380029)
   - HTML
   - CSS
   - SQL
+  - PHP
   - JAVASCRIPT
 ---
 # Ambientes!
 
   - Tela de Login
-  - Tela de Cadastro
   - Dashboard
 <!--  - Tela de Status da Rede Para o Gerente -->
 ---
 # Funcionalidades
 
 Será possivel :
-
-  - Criar,modificar e excluir Ativos
+  - Criar,modificar e excluir Usuários
+  - Criar,modificar e excluir Ativos de Rede
   - Visualizar Gráficos Referente a condições da rede
+  - Configurar Serviços como DHCP,DNS,Entre outros.
   - Notificar o Gerente quando Mudar o status de dispositivos criticos
   
 
