@@ -1,0 +1,49 @@
+#conteudo-left{
+    /*Novamente definimos a largura da div*/
+    width:500px;
+    /* altura da div */
+    height:300px;
+    /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    float:left;
+    /* Cor de fundo da div */
+    background-color:#FF0;
+  }
+#conteudo-right{
+    /*Novamente definimos a largura da div*/
+    width:500px;
+    /* altura da div */
+    height:400px;
+    /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px, 
+    automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+    float:left;
+    /* Cor de fundo da div */
+    background-color:#F00;
+}
+#conteudo{
+    background-color: #cccccc; /*cor de fundo*/
+    border: 1px solid #000000; /*borda de 1 pixel sólida*/
+    width: 50%; /*largura*/
+    height: auto; /*altura*/
+    clear:both; /*não permite nenhum elemento
+                flutuar ao lado da section "conteudo" */
+}
+
+
+#lateral{
+    float:right; /*define que o elemento deve flutuar à direita*/
+    background-color: #ff6600; /*cor de fundo*/
+    padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+    width: 15% /*largura*/
+}
+#conteudo{
+    padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+    width: 80%; /*largura*/
+    float:left; /*define que o elemento deve flutuar à esquerda*/
+    background-color: #999999; /*cor de fundo*/
+}
+#rodape{
+    clear: both; /*não permite elementos flutuantes ao lado*/
+    text-align: center; /*alinhamento do texto*/
+    padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+    background-color: #cccccc; /*cor de fundo*/
+}
