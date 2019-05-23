@@ -28,7 +28,6 @@
                 flutuar ao lado da section "conteudo" */
 }
 
-
 #lateral{
     float:right; /*define que o elemento deve flutuar à direita*/
     background-color: #ff6600; /*cor de fundo*/
@@ -46,4 +45,19 @@
     text-align: center; /*alinhamento do texto*/
     padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
     background-color: #cccccc; /*cor de fundo*/
+}
+
+.popup{
+    background:white;
+    position:fixed;
+    top: 0;bottom: 0;
+    left: 0;right: 0;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    padding: 15px;
+    border-color: black;
+    display: none;
+    border: width 2px;
+    
 }
