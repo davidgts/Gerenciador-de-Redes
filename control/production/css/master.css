@@ -57,7 +57,7 @@
     height: 80%;
     padding: 15px;
     border-color: black;
-    display: none;
+    transform: scale(0);
     border: width 2px;
     
 }
