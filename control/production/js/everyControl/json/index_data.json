@@ -1,0 +1,39 @@
+{
+"topInfo":{
+
+    "users_conec": "700",
+    "disponibilidade": "30 Dias",
+    "pacotes_descartados": 100,
+    "roteatores_ativos": "50",
+    "sw_ativos": "100",
+    "disp_conec": "500"
+
+},
+"banda":
+{
+    "wifi":"20%",
+    "eth":"50%",
+    "fibra":"30%" 
+},
+"uso":{
+
+    "SRV01":"30%"    ,
+    "PC02":"10%"    ,
+    "Raspberry":"20%"    ,
+    "Router 01":"15%",
+    "Others": "30%"    
+    
+},
+
+"TaxaTransferencia":{
+    "Router 01" : 500,
+    "SW 03" : 300,
+    "Router 02" : 230,
+    "Modem 01" : 63,
+    "SW 09" : 15
+}
+
+
+
+}
+  
