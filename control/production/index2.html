@@ -267,39 +267,8 @@
       <!-- page content -->
       <div class="right_col" role="main">
         <div class="">
-          <div class="row top_tiles">
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats">
-                <div class="icon"><i class="fa fa-circle" style="font-size: xx-large;color:  #1ABB9C;margin: 14px 20px;"aria-hidden="true"></i></div>
-                <div class="count">On-Line</div>
-                <h3>DNS</h3>
-                <p>Servidor Responsável pela conversão ip Nome .</p>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats">
-                <div class="icon"><i class="fa fa-circle" style="font-size: xx-large;color:  #1ABB9C;margin: 14px 20px;"aria-hidden="true"></i></div>
-                <div class="count">On-Line</div>
-                <h3>FIREWALL</h3>
-                <p>Servidor de proteção das portas de acesso.</p>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats">
-                <div class="icon"><i class="fa fa-circle" style="font-size: xx-large;color: rgb(224, 109, 80);margin: 14px 20px;"aria-hidden="true"></i></div>
-                <div class="count">Off-Line</div>
-                <h3>DHCP</h3>
-                <p style="margin: 5%">Servidor de Distribuição de IP´s.</br></p>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats">
-                <div class="icon"><i class="fa fa-circle" style="font-size: xx-large;color:  #1ABB9C;margin: 14px 20px;"aria-hidden="true"></i></div>
-                <div class="count">On-Line</div>
-                <h3>WEB</h3>
-                <p>Servidor Responsável pela publicação do site web.</p>
-              </div>
-            </div>
+          <div id= "headInfo" class="row top_tiles">
+         
           </div>
 
           <div class="row">
@@ -319,43 +288,8 @@
                   <div class="row" style="border-bottom: 1px solid #E0E0E0; padding-bottom: 5px; margin-bottom: 5px;">
 
 
-
-                    <div class="col-sm-6">
-                      <div class="row" style="text-align: center;">
-
-                        <div class="col-md-4">
-                          <span class="chart" data-percent="86">
-                            <span class="percent"></span>
-                          </span>
-                          <h4 style="margin:0">Uso CPU</h4>
-                          <h4 style="margin:3%">WEB</h4>
-                        </div>
-
-                        <div class="col-md-4">
-                          <span class="chart" data-percent="36">
-                            <span class="percent"></span>
-                          </span>
-                          <h4 style="margin:0">Uso CPU</h4>
-                          <h4 style="margin:3%">DNS</h4>
-                        </div>
-
-                        <div class="col-md-4">
-                          <span class="chart" data-percent="50">
-                            <span class="percent"></span>
-                          </span>
-                          <h4 style="margin:0">Uso CPU</h4>
-                          <h4 style="margin:3%">FIREWALL</h4>
-                        </div>
-
-                        <div class="col-md-4">
-                          <span class="chart" data-percent="99">
-                            <span class="percent"></span>
-                          </span>
-                          <h4 style="margin:0">Uso CPU</h4>
-                          <h4 style="margin:3%">DHCP</h4>
-                        </div>
-
-                      </div>
+                    <div id="porcentagemcpu"class="col-sm-6">
+                      
                     </div>
 
                     <div class="col-sm-6">
@@ -573,6 +507,8 @@
 
   <!-- Custom Theme Scripts -->
   <script src="../build/js/custom.min.js"></script>
+
+  <script src="js/everyControl/index2_loadInfo.js"></script>
 </body>
 
 </html>

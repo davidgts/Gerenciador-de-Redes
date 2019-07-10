@@ -1,0 +1,110 @@
+{  
+
+        "a":{
+            "name":"dns",
+            "status": "true",
+            "desc":"Servidor Responsável pela conversão ip Nome",
+            "cpu":36,
+            "Max":"5M:1D:09:27:55",
+            "ultIni":"16D:02:30:15",
+            "discos":{
+                "1": "nbd0",
+                "2": "dev",
+                "3": "swap"
+            },
+            "proce":{
+               "1":"BIND9",
+               "2":"Code",
+               "3":"Python",
+               "4":"IPtables"
+            }
+        },
+
+        "b":{
+            "name":"firewall",
+            "status": "true",
+            "desc":"Servidor de proteção das portas de acesso.",
+            "cpu":50,
+            "Max":"5M:1D:09:27:55",
+            "ultIni":"6D:06:59:21",
+            "discos":{
+                "1": "nbd0",
+                "2": "dev",
+                "3": "backup",
+                "4": "swap"
+            },
+            "proce":{
+               "1":"IPtables",
+               "2":"bioset",
+               "3":"Logwrite",
+               "4":"containerd"
+            }
+
+        },
+        
+        "c":{
+            "name":"dhcp",
+            "status": "false",
+            "desc":"Servidor de Distribuição de IP´s",
+            "cpu":99,
+            "Max":"1M:6D:15:39:59",
+            "ultIni":"1D:09:30:45",
+            "discos":{
+                "1": "nbd0",
+                "2": "dev",
+                "3": "backup",
+                "4": "swap"
+            },
+            "proce":{
+               "1":"SAMBA",
+               "2":"Python",
+               "3":"Dockerd",
+               "4":"Vim"
+            }
+
+        },
+        "d":{
+            "name":"web",
+            "status": "true",
+            "desc":"Servidor Responsável pela publicação do site web.",
+            "cpu":40,            
+            "Max":"1A:3D:10:19:26",
+            "ultIni":"1D:09:30:45",
+            "discos":{
+                "1": "nbd0",
+                "2": "dev",
+                "3": "backup",
+                "4": "swap"
+            },
+            "proce":{
+               "1":"Bash",
+               "2":"Apache2",
+               "3":"Dockerd",
+               "4":"Mysql"
+            }
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+}
+
+
+
+

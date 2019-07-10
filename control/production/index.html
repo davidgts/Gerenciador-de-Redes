@@ -17,6 +17,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/master.css" rel="stylesheet">
 
   <!-- NProgress -->
   <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
@@ -296,44 +297,11 @@
               </div>
 
               <div class="col-md-9 col-sm-9 col-xs-12">
-                <div id="chart_plot_01" class="demo-placeholder"></div>
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-                <div class="x_title">
-                  <h2>Uso de Banda</h2>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="col-md-12 col-sm-12 col-xs-6">
-                  <div>
-                    <p>Wi-fi - 20% </p>
-                    <div class="">
-                      
-                      <div class="progress progress_sm" style="width: 76%;">
-                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="20"></div>                          
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <p>Ethernet - 50%</p>
-                    <div class="">
-                      <div class="progress progress_sm" style="width: 76%;">
-                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-6">
-                  <div>
-                    <p>Fibra Óptica - 30%</p>
-                    <div class="">
-                      <div class="progress progress_sm" style="width: 76%;">
-                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+                  <canvas id="barChart"></canvas>
+              </div>    
+                
+              <div id="midinfo"  class="col-md-3 col-sm-3 col-xs-12 bg-white">
+              
               </div>
 
               <div class="clearfix"></div>
@@ -350,94 +318,8 @@
                 <h2>Taxa de Transfência</h2>                
                 <div class="clearfix"></div>
               </div>
-              <div class="x_content">    
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>Router 01</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="30" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 66%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>500 Kbp/s</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>SW 03</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 45%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>300 Kbp/s</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>Router 02</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 25%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>230 Kbp/s</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>Modem 01</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 5%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>63 Kbp/s</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>Switch 09</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 2%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>15 Kbp/s</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-
+              <div id = "taxatransferencia" class="x_content">    
+              
               </div>
             </div>
           </div>
@@ -447,12 +329,11 @@
               <div class="x_title">
                 <h2>Uso da Rede</h2>
                 <ul class="nav navbar-right panel_toolbox">
-               
                 </ul>
                 <div class="clearfix"></div>
               </div>
               <div class="x_content">
-                <table class="" style="width:100%">
+                <table  class="" style="width:100%">
                   <tr>
                     <th style="width:37%;">
                       <p>Top 5</p>
@@ -471,37 +352,7 @@
                       <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
                     </td>
                     <td>
-                      <table class="tile_info">
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square blue"></i>SRV 01 </p>
-                          </td>
-                          <td>30%</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square green"></i>PC 02 </p>
-                          </td>
-                          <td>10%</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square purple"></i>Raspberry </p>
-                          </td>
-                          <td>20%</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square aero"></i>Router 01 </p>
-                          </td>
-                          <td>15%</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p><i class="fa fa-square red"></i>Others </p>
-                          </td>
-                          <td>30%</td>
-                        </tr>
+                      <table id="usoinfo" class="tile_info">                       
                       </table>
                     </td>
                   </tr>
@@ -572,7 +423,7 @@
   <!-- Custom Theme Scripts -->
   <script src="../build/js/custom.min.js"></script>
   <!-- Custom Scripts -->
-  <script src="js/everyControl/loadInfo.js"></script>
+  <script src="js/everyControl/index_loadInfo.js"></script>
 
 </body>
 

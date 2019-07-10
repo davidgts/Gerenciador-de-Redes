@@ -11,9 +11,9 @@
 },
 "banda":
 {
-    "wifi":"20%",
+    "wifi":"30%",
     "eth":"50%",
-    "fibra":"30%" 
+    "fibra":"20%" 
 },
 "uso":{
 
@@ -21,18 +21,72 @@
     "PC02":"10%"    ,
     "Raspberry":"20%"    ,
     "Router 01":"15%",
-    "Others": "30%"    
+    "Others": "20%" 
+ 
     
 },
 
 "TaxaTransferencia":{
-    "Router 01" : 500,
-    "SW 03" : 300,
-    "Router 02" : 230,
-    "Modem 01" : 63,
-    "SW 09" : 15
-}
+    "Router 01" : "500 kbp/s",
+    "SW 03" : "300 kbp/s",
+    "Router 02" : "230 kbp/s",
+    "Modem 01" : "63 kbp/s",
+    "SW 09" :   "15 kbp/s"
+},
+"canva":{
+    "wifi":{
+       "jan": 65,
+       "fev": 59, 
+       "mar": 80,
+       "abr": 81,
+       "mai": 56,
+       "jun": 55,
+       "jul": 40,
+       "ago": 50,
+       "set": 60,
+       "out": 55,
+       "nov": 30,
+       "dec": 78
+    },
 
+    "ethe":{
+        "jan": 65,
+        "fev": 59, 
+        "mar": 80,
+        "abr": 81,
+        "mai": 56,
+        "jun": 25,
+        "jul": 40,
+        "ago": 30,
+        "set": 60,
+        "out": 55,
+        "nov": 90,
+        "dec": 78
+     },
+     "fibra":{
+        "jan": 10,
+        "fev": 40, 
+        "mar": 60,
+        "abr": 81,
+        "mai": 95,
+        "jun": 78,
+        "jul": 40,
+        "ago": 90,
+        "set": 40,
+        "out": 70,
+        "nov": 30,
+        "dec": 78
+
+
+
+       
+
+
+     }
+     
+
+
+}
 
 
 }
