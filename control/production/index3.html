@@ -57,7 +57,6 @@
             <h3>Dados Gerais do Dispositivo</h3>
             <div class=" x_content container">
 
-
               <dt> Processador </dt> Intel(R) Core(TM) i5-4250U CPU @ 1.30 Ghz
               <hr>
               <dt> Sistema Operacional </dt> Windows 10 pro
@@ -138,12 +137,7 @@
 
                   </ul>
                 </li>
-                <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-                  </ul>
-                </li>
+               
                 <li><a><i class="fa fa-bar-chart-o"></i> Estatísticas <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="chartjs.html">Chart JS</a></li>
@@ -355,16 +349,7 @@
                     <th style="width: 14px">Uso de CPU</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="#" onclick="popup_open();">PC01</a> </td>
-                    <td>ONLINE</td>
-                    <td>Administrativo</td>
-                    <td>192.168.1.61</td>
-                    <td>255.255.255.0</td>
-                    <td>5%</td>
-                  </tr>
-
+                <tbody id="dadosAtivos">
                 </tbody>
               </table>
             </div>
@@ -387,6 +372,7 @@
   </div>
 
   <script src="./js/everyControl/main.js"></script>
+  <script src="./js/everyControl/lista_ativos.js"></script>
 
   <!-- jQuery -->
   <script src="../vendors/jquery/dist/jquery.min.js"></script>

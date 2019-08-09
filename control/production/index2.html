@@ -77,12 +77,7 @@
                     <li><a href="typography.html">DNS</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-                  </ul>
-                </li>
+               
                 <li><a><i class="fa fa-bar-chart-o"></i> Estatísticas <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="chartjs.html">Chart JS</a></li>
@@ -296,42 +291,18 @@
                       <div class="row" style="text-align: center;">
                         <h2>Tempo desde a ultima Inicialização</h2>
 
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th>#</th>
-                              <th>Servidor</th>
-                              <th>Máximo tempo ligado</th>
-                              <th>Tempo desde a ultima Inicialização</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>DNS</td>
-                              <td>5M:1D:09:27:55</td>
-                              <td>16D:02:30:15</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>WEB</td>
-                              <td>2M:15D:05:10:25</td>
-                              <td>09:02:35</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>DHCP</td>
-                              <td>1M:6D:15:39:59</td>
-                              <td>1D:09:30:45</td>
-                            </tr>
+                        <table  class="table">
+                         <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Servidor</th>
+                            <th>Máximo tempo ligado</th>
+                            <th>Tempo desde a ultima Inicialização</th>
+                          </tr>
+                        </thead>
+                      <tbody id="teste">
+                        </tbody> 
 
-                            <tr>
-                              <th scope="row">4</th>
-                              <td>FIREWALL</td>
-                              <td>5M:1D:09:27:55</td>
-                              <td>6D:06:59:21</td>
-                            </tr>
-                          </tbody>
                         </table>
 
                       </div>
@@ -344,6 +315,7 @@
 
 
 
+          <
           <div class="row">
             <div class="col-md-6">
               <div class="x_panel">
@@ -359,43 +331,19 @@
 
                 <div class="col-3">
                   <table class="table">
-                    <thead>
-                      <tr>
-                        <th>DNS</th>
-                        <th>WEB</th>
-                        <th>DHCP</th>
-                        <th>FIREWALL</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>BIND9</td>
-                        <td>Code</td>
-                        <td>Python</td>
-                        <td>IPtables</td>
-                      </tr>
-                      <tr>
-
-                        <td>Nano</td>
-                        <td>Apache2</td>
-                        <td>Vim</td>
-                        <td>bioset</td>
-                      </tr>
-                      <tr>
-
-                        <td>Bash</td>
-                        <td>Mysql</td>
-                        <td>Dockerd</td>
-                        <td>Logwrite</td>
-                      </tr>
-
-                      <tr>
-
-                        <td>Mysql</td>
-                        <td></td>
-                        <td>SAMBA</td>
-                        <td>containerd</td>
-                      </tr>
+                 <thead>
+                  <tr>
+                    
+                    <th>Servidor</th>
+                    <th>Processo 1</th>
+                    <th>Processo 2</th>
+                    <th>Processo 3</th>
+                    <th>Processo 4</th>
+                  </tr>
+        
+                </thead>
+                    <tbody id="procInfo">
+                    
                     </tbody>
                   </table>
                 </div>
@@ -417,42 +365,16 @@
                   <div class="col-3">
                     <table class="table">
                       <thead>
-                        <tr>
-                          <th>DNS</th>
-                          <th>WEB</th>
-                          <th>DHCP</th>
-                          <th>FIREWALL</th>
+                        <tr>                    
+                          <th>Servidor</th>
+                          <th>Disco 1</th>
+                          <th>Disco 2</th>
+                          <th>Disco 3</th>
+                          <th>Disco 4</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td>nbd0</td>
-                          <td>Code</td>
-                          <td>Python</td>
-                          <td>IPtables</td>
-                        </tr>
-                        <tr>
-  
-                          <td>Nano</td>
-                          <td>Apache2</td>
-                          <td>Vim</td>
-                          <td>bioset</td>
-                        </tr>
-                        <tr>
-  
-                          <td>Bash</td>
-                          <td>Mysql</td>
-                          <td>Dockerd</td>
-                          <td>Logwrite</td>
-                        </tr>
-  
-                        <tr>
-  
-                          <td>Mysql</td>
-                          <td></td>
-                          <td>SAMBA</td>
-                          <td>containerd</td>
-                        </tr>
+                      <tbody id="discinfo">
+                       
                       </tbody>
                     </table>
                   </div>

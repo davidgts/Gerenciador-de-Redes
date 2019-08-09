@@ -10,7 +10,7 @@
             "discos":{
                 "1": "nbd0",
                 "2": "dev",
-                "3": "swap"
+                "3": "Dev"
             },
             "proce":{
                "1":"BIND9",
@@ -31,7 +31,7 @@
                 "1": "nbd0",
                 "2": "dev",
                 "3": "backup",
-                "4": "swap"
+                "4": "sdb4"
             },
             "proce":{
                "1":"IPtables",

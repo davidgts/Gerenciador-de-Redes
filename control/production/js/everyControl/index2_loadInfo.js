@@ -1,5 +1,8 @@
 const headInfo  = document.getElementById('headInfo')
 const porcent   = document.getElementById('porcentagemcpu')
+const initInf   = document.getElementById('teste')
+const processosInfo = document.getElementById('procInfo')
+const infoDisc  = document.getElementById('discinfo')
 
 
 /*Capturando o json*/
@@ -15,13 +18,18 @@ function loadInfo_Index(data){
     let color
     let nameC
     let porcentagem
+    let cont = 0
+    let inic
+    let pros
+    let disc
 
     porcentagem =`<div class="row" style="text-align: center;">`
 
     var mapServers = new Map();
     mapServers = data;     
 
-    for(let value in mapServers){          
+    for(let value in mapServers){       
+      cont = cont +1   
 
        if (mapServers[value].status === "true"){
             color = "#1ABB9C"
@@ -50,19 +58,53 @@ function loadInfo_Index(data){
             <h4 style="margin:0">Uso CPU</h4>
             <h4 style="margin:3%">${mapServers[value].name}</h4>
           </div>`
+          
+          inic = inic + `<tr>
+                          <th scope="row">${cont}</th>
+                          <td>${mapServers[value].name}</td>
+                          <td>${mapServers[value].Max}</td>
+                          <td>${mapServers[value].ultIni}</td>
+                        </tr>`
+          
+          pros = pros + `<tr>
+                          
+                          <td>${mapServers[value].name}</td>`
+
+                         for (let pro  of ValueOfMapToArray(mapServers[value].proce)){
+
+                            pros = pros + `<td>${pro}</td>`
+                         }
+
+
+                         pros = pros +`</tr>`
+
+
+          disc = disc + ` <tr>
+                          
+          <td>${mapServers[value].name}</td>`
+
+         for (let pro  of ValueOfMapToArray(mapServers[value].discos)){
+
+            disc = disc + `<td>${pro}</td>`
+         }
+
+
+         disc = disc +`</tr>`       
+
 
     }
 
-
+    
 
     porcentagem = porcentagem + `</div>`
-
 
 
     // Solução alternativa
     headInfo.insertAdjacentHTML (`beforeend`, server.replace('undefined',''))
     porcent.insertAdjacentHTML (`afterbegin`,porcentagem)
-
+    initInf.insertAdjacentHTML (`beforeend`, inic.replace('undefined',''))
+    processosInfo.insertAdjacentHTML (`beforeend`, pros.replace('undefined',''))
+    infoDisc.insertAdjacentHTML (`beforeend`, disc.replace('undefined',''))
 }
 
 
